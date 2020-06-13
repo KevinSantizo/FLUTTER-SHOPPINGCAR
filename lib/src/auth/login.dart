@@ -107,7 +107,9 @@ class _LoginState extends State<Login> {
         ),
         padding: EdgeInsets.all(15.0),
         color: myTheme.accentColor,
-        onPressed: (){},
+        onPressed: (){
+          Navigator.pushReplacementNamed(context, 'bottom-navigation-bar');
+        },
         child: Text('Iniciar sesión', textScaleFactor: 1.3,),
     ),
     );

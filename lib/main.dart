@@ -1,4 +1,6 @@
+import 'package:car_shoping/src/components/bottom_navigation_bar.dart';
 import 'package:car_shoping/src/components/wrapper.dart';
+import 'package:car_shoping/src/pages/home.dart';
 import 'package:car_shoping/src/theme/theme.dart';
 import 'package:flutter/material.dart';
  
@@ -10,7 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: myTheme,
       debugShowCheckedModeBanner: false,
-      home: Wrapper()
+      home: Wrapper(),
+      routes: {
+        'home'                  : (BuildContext context) => HomePage(),
+        'bottom-navigation-bar' : (BuildContext context) => BottomNavigationBarComponent()
+      },
     );
   }
 }
