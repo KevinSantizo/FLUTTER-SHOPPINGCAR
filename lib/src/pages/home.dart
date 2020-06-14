@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
-                        Text('Hola!', textScaleFactor: 1.6,),
+                        Text('Hola! Soy el user', textScaleFactor: 1.6,),
                         SvgPicture.asset('assets/avatar.svg', height: 50.0,)
                       ],
                     ),
