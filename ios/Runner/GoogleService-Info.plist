@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>680805423980-mmlrnp6sfl8ajeu3k0fq889fi2epbg2b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.680805423980-mmlrnp6sfl8ajeu3k0fq889fi2epbg2b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAMo2_T8c8i0EFnIlrg9o4Mr0yd_Ray6QM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>680805423980</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.carKevin.carShoping</string>
+	<key>PROJECT_ID</key>
+	<string>carshopnig</string>
+	<key>STORAGE_BUCKET</key>
+	<string>carshopnig.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:680805423980:ios:854a0faa36c091d48e7149</string>
+	<key>DATABASE_URL</key>
+	<string>https://carshopnig.firebaseio.com</string>
+</dict>
+</plist>

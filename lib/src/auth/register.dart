@@ -1,3 +1,4 @@
+import 'package:car_shoping/src/models/address_model.dart';
 import 'package:car_shoping/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -15,12 +16,42 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
 
-  bool obscureText = true;      
+  bool obscureText = true; 
+  String dropdownValue;
+  String dropdownValue2;     
   void chageIconState() {
     setState(() {
       obscureText = !obscureText;
     });
   }
+
+  List<Department> _listDepartment = [
+
+    Department( idDepartment:  1,   nameDepartment:  'Guatemala'      ),
+    Department( idDepartment:  2,   nameDepartment:  'El Progreso'    ),
+    Department( idDepartment:  3,   nameDepartment:  'Sacatepequez'   ),
+    Department( idDepartment:  4,   nameDepartment:  'Chimaltenango'  ),
+    Department( idDepartment:  5,   nameDepartment:  'Escuintla'      ),
+    Department( idDepartment:  6,   nameDepartment:  'Santa Rosa'     ),
+    Department( idDepartment:  7,   nameDepartment:  'Sololá'         ),
+    Department( idDepartment:  8,   nameDepartment:  'Totonicapán'    ),
+    Department( idDepartment:  9,   nameDepartment:  'Quetzaltenango' ),
+    Department( idDepartment:  10,  nameDepartment:  'Suchitepequez'  ),
+    Department( idDepartment:  11,  nameDepartment:  'Retalhuleu'     ),
+    Department( idDepartment:  12,  nameDepartment:  'San Marcos'     ),
+    Department( idDepartment:  13,  nameDepartment:  'Huehuetenango'  ),
+    Department( idDepartment:  14,  nameDepartment:  'Quiché'         ),
+    Department( idDepartment:  15,  nameDepartment:  'Baja Verapaz'   ),
+    Department( idDepartment:  16,  nameDepartment:  'Alta Verapaz'   ),
+    Department( idDepartment:  17,  nameDepartment:  'Petén'          ),
+    Department( idDepartment:  18,  nameDepartment:  'Izabal'         ),
+    Department( idDepartment:  19,  nameDepartment:  'Zacapa'         ),
+    Department( idDepartment:  20,  nameDepartment:  'Chiquimula'     ),
+    Department( idDepartment:  21,  nameDepartment:  'Jalapa'         ),
+    Department( idDepartment:  22,  nameDepartment:  'Jutiapa'        ),
+
+
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +93,10 @@ class _RegisterState extends State<Register> {
                   SizedBox(height: 50.0,),
                   _nameAndLastName(),
                   SizedBox(height: 30.0,),
+                  _department(),
+                  SizedBox(height: 30.0,),
+                  _municipality(),
+                  SizedBox(height: 30.0,),
                   _emailForm(),
                   SizedBox(height: 30.0,),
                   _phoneForm(),
@@ -79,7 +114,7 @@ class _RegisterState extends State<Register> {
   }
 
 
- Widget _nameAndLastName() {
+  Widget _nameAndLastName() {
    return Container(
      child: Row(
        children: <Widget>[
@@ -90,55 +125,105 @@ class _RegisterState extends State<Register> {
      ),
    );
  }
+  
+  Widget _department(){
+    return Container(
+      child: DropdownButtonFormField<String>(
+        hint: Text('Departamento', textScaleFactor: 1.0),
+        value: dropdownValue,
+        icon: Icon(Feather.chevron_down),
+        iconSize: 24,
+        elevation: 16,
+        style: TextStyle(color: Colors.grey, fontSize: 16.0),
+        onChanged: (String newValue) {
+          setState(() {
+            dropdownValue = newValue;
+            print(dropdownValue);
+          });
+        },
+        items: _listDepartment.map<DropdownMenuItem<String>>((value) {
+           return DropdownMenuItem<String>(
+            value: value.nameDepartment,
+            child: Text(value.nameDepartment),
+          ); 
+        }).toList(),
+      ),
+    );
+  }
 
+  Widget _municipality(){
+    return Container(
+      child: DropdownButtonFormField<String>(
+        hint: Text('Municipio', textScaleFactor: 1.0,),
+        value: dropdownValue2,
+        icon: Icon(Feather.chevron_down),
+        iconSize: 24,
+        elevation: 16,
+        style: TextStyle(color: Colors.grey, fontSize: 16.0),
+        onChanged: (String newValue) {
+          setState(() {
+            dropdownValue2 = newValue;
+            print(dropdownValue2);
+          });
+        },
+        items: <String>['One', 'Two', 'Free', 'Four']
+            .map<DropdownMenuItem<String>>((String value) {
+          return DropdownMenuItem<String>(
+            value: value,
+            child: Text(value),
+          );
+        }).toList(),
+      ),
+    );
+  }
 
- Widget _nameForm() {
+  Widget _nameForm() {
    return TextFormField(
      keyboardType: TextInputType.emailAddress,
      decoration: InputDecoration(
       hintText: 'Nombres',
-      prefixIcon: Icon(Feather.user)
+      // prefixIcon: Icon(Feather.user)
      ),
    );
  }
 
- Widget _lastNameForm() {
+  Widget _lastNameForm() {
    return TextFormField(
      keyboardType: TextInputType.emailAddress,
      decoration: InputDecoration(
       hintText: 'Apellidos',
-      prefixIcon: Icon(Feather.user)
+      // prefixIcon: Icon(Feather.user)
      ),
    );
  }
 
- Widget _emailForm() {
+  Widget _emailForm() {
    return TextFormField(
      keyboardType: TextInputType.emailAddress,
      decoration: InputDecoration(
       hintText: 'Email',
-      prefixIcon: Icon(Feather.mail)
+      // prefixIcon: Icon(Feather.mail)
      ),
    );
  }
-Widget _phoneForm() {
+  Widget _phoneForm() {
   return TextFormField(
      obscureText: obscureText,
      keyboardType: TextInputType.emailAddress,
      decoration: InputDecoration(
       hintText: 'Teléfono',
-      prefixIcon: Icon(Feather.phone)
+      // prefixIcon: Icon(Feather.phone)
       ),
     );
   }
 
- Widget _passwordForm() {
+  Widget _passwordForm() {
   return TextFormField(
     obscureText: obscureText,
     keyboardType: TextInputType.emailAddress,
     decoration: InputDecoration(
       hintText: 'Contraseña',
-      prefixIcon: obscureText ? _lockIcon() : _unlockIcon(),
+      // prefixIcon: obscureText ? _lockIcon() : _unlockIcon(),
       suffixIcon: IconButton(
         icon: obscureText ? _visibilityOn() : _visibilityOff(),
         onPressed: chageIconState,
