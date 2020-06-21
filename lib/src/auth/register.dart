@@ -1,13 +1,12 @@
 import 'package:car_shoping/src/models/address_model.dart';
 import 'package:car_shoping/src/theme/theme.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 
 
 class Register extends StatefulWidget {
-
   final Function toogleViews;
   Register({ this.toogleViews });
   @override
@@ -16,6 +15,8 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
 
+
+  final _databaseReference = Firestore.instance;
   bool obscureText = true; 
   String dropdownValue;
   String dropdownValue2;     
@@ -25,7 +26,7 @@ class _RegisterState extends State<Register> {
     });
   }
 
-  List<Department> _listDepartment = [
+  List<Department> _departmentList = [
 
     Department( idDepartment:  1,   nameDepartment:  'Guatemala'      ),
     Department( idDepartment:  2,   nameDepartment:  'El Progreso'    ),
@@ -50,6 +51,21 @@ class _RegisterState extends State<Register> {
     Department( idDepartment:  21,  nameDepartment:  'Jalapa'         ),
     Department( idDepartment:  22,  nameDepartment:  'Jutiapa'        ),
 
+  ];
+
+  List<Town> _townList = [
+
+    Town( idTown: 1, nameTown: 'Mixco'                  ),
+    Town( idTown: 1, nameTown: 'Villa Nueva'            ),
+    Town( idTown: 1, nameTown: 'Santa Catarina Pinula'  ),
+    Town( idTown: 1, nameTown: 'San José Pinula'        ),
+    Town( idTown: 1, nameTown: 'Villa Canales'          ),
+    Town( idTown: 1, nameTown: 'Fraijanes'              ),
+
+    Town( idTown: 2, nameTown: 'Guastatoya'             ),
+    Town( idTown: 2, nameTown: 'Barberena'              ),
+    Town( idTown: 2, nameTown: 'San Marcos'             ),
+
 
   ];
 
@@ -66,46 +82,39 @@ class _RegisterState extends State<Register> {
             },
             child: Container(
               height: 75.0,
+              alignment: Alignment.center,
               width: double.infinity,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.chevron_left),
-                  Text('Iniciar sesión', textScaleFactor: 1.3,),
-                ],
-              ),
+              child: Text('Iniciar sesión', textScaleFactor: 1.3, style: TextStyle(color: myTheme.accentColor, decoration: TextDecoration.underline),),
             ),
           ),
         ),
       ),
       body: Container(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 50.0),
-            child: SingleChildScrollView(
-              child: Column(
-                // mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  Text('Crea tu cuenta', textScaleFactor: 1.7),
-                  SizedBox(height: 30.0,),
-                  SvgPicture.asset('assets/car.svg', height: 120.0,),
-                  SizedBox(height: 50.0,),
-                  _nameAndLastName(),
-                  SizedBox(height: 30.0,),
-                  _department(),
-                  SizedBox(height: 30.0,),
-                  _municipality(),
-                  SizedBox(height: 30.0,),
-                  _emailForm(),
-                  SizedBox(height: 30.0,),
-                  _phoneForm(),
-                  SizedBox(height: 30.0,),
-                  _passwordForm(),
-                  SizedBox(height: 50.0,),
-                  _buttonSubmit()
-                ],
-              ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 50.0),
+          child: SingleChildScrollView(
+            child: Column(
+              // mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text('Crea tu cuenta', textScaleFactor: 1.7),
+                // SizedBox(height: 30.0,),
+                // SvgPicture.asset('assets/car.svg', height: 120.0,),
+                SizedBox(height: 50.0,),
+                _nameAndLastName(),
+                SizedBox(height: 30.0,),
+                _department(),
+                SizedBox(height: 30.0,),
+                _municipality(),
+                SizedBox(height: 30.0,),
+                _emailForm(),
+                SizedBox(height: 30.0,),
+                _phoneForm(),
+                SizedBox(height: 30.0,),
+                _passwordForm(),
+                SizedBox(height: 50.0,),
+                _buttonSubmit()
+              ],
             ),
           ),
         ),
@@ -141,7 +150,7 @@ class _RegisterState extends State<Register> {
             print(dropdownValue);
           });
         },
-        items: _listDepartment.map<DropdownMenuItem<String>>((value) {
+        items: _departmentList.map<DropdownMenuItem<String>>((value) {
            return DropdownMenuItem<String>(
             value: value.nameDepartment,
             child: Text(value.nameDepartment),
@@ -166,12 +175,11 @@ class _RegisterState extends State<Register> {
             print(dropdownValue2);
           });
         },
-        items: <String>['One', 'Two', 'Free', 'Four']
-            .map<DropdownMenuItem<String>>((String value) {
+        items: _townList.map<DropdownMenuItem<String>>((value) {
           return DropdownMenuItem<String>(
-            value: value,
-            child: Text(value),
-          );
+            value:  value.nameTown,
+            child: Text(value.nameTown),
+          ); 
         }).toList(),
       ),
     );

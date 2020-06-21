@@ -34,39 +34,32 @@ class _LoginState extends State<Login> {
               widget.toggleViews();
             },
             child: Container(
+              alignment: Alignment.center,
               height: 75.0,
               width: double.infinity,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text('Crear una cuenta', textScaleFactor: 1.3,),
-                  Icon(Icons.chevron_right)
-                ],
-              ),
+              child: Text('Crear una cuenta', textScaleFactor: 1.3, style: TextStyle(color: myTheme.accentColor, decoration: TextDecoration.underline),),
             ),
           ),
         ),
       ),
       body: Container(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 50.0),
-            child: SingleChildScrollView(
-              child: Column(
-                // mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  Text('Inicia sesión', textScaleFactor: 1.7),
-                  SizedBox(height: 40.0,),
-                  SvgPicture.asset('assets/car.svg', height: 120.0,),
-                  SizedBox(height: 60.0,),
-                  _emailForm(),
-                  SizedBox(height: 40.0,),
-                  _passwordForm(),
-                  SizedBox(height: 60.0,),
-                  _buttonSubmit()
-                ],
-              ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 50.0),
+          child: SingleChildScrollView(
+            child: Column(
+              // mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text('Inicia sesión', textScaleFactor: 1.7),
+                SizedBox(height: 40.0,),
+                SvgPicture.asset('assets/car.svg', height: 120.0,),
+                SizedBox(height: 60.0,),
+                _emailForm(),
+                SizedBox(height: 40.0,),
+                _passwordForm(),
+                SizedBox(height: 60.0,),
+                _buttonSubmit()
+              ],
             ),
           ),
         ),
