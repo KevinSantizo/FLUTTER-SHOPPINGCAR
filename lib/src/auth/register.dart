@@ -137,25 +137,34 @@ class _RegisterState extends State<Register> {
   
   Widget _department(){
     return Container(
-      child: DropdownButtonFormField<String>(
-        hint: Text('Departamento', textScaleFactor: 1.0),
-        value: dropdownValue,
-        icon: Icon(Feather.chevron_down),
-        iconSize: 24,
-        elevation: 16,
-        style: TextStyle(color: Colors.grey, fontSize: 16.0),
-        onChanged: (String newValue) {
-          setState(() {
-            dropdownValue = newValue;
-            print(dropdownValue);
-          });
-        },
-        items: _departmentList.map<DropdownMenuItem<String>>((value) {
-           return DropdownMenuItem<String>(
-            value: value.nameDepartment,
-            child: Text(value.nameDepartment),
-          ); 
-        }).toList(),
+      child: StreamBuilder<QuerySnapshot>(
+        stream: _databaseReference.collection('department').snapshots(),
+        builder: (context,  AsyncSnapshot<QuerySnapshot>snapshot) {
+          if (snapshot.hasData) {
+            return DropdownButtonFormField<String>(
+              hint: Text('Departamento', textScaleFactor: 1.0),
+              value: dropdownValue,
+              icon: Icon(Feather.chevron_down),
+              iconSize: 24,
+              elevation: 16,
+              style: TextStyle(color: Colors.grey, fontSize: 16.0),
+              onChanged: (String newValue) {
+                setState(() {
+                  dropdownValue = newValue;
+                  print(dropdownValue);
+                });
+              },
+              items: snapshot.data.documents.map<DropdownMenuItem<String>>((value) {
+                return DropdownMenuItem<String>(
+                  value: value['name_department'],
+                  child: Text(value['name_department']),
+                ); 
+              }).toList(),
+            );     
+          } else {
+            return Center(child: CircularProgressIndicator());
+          }
+        }
       ),
     );
   }
