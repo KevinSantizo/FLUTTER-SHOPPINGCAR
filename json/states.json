@@ -91,9 +91,9 @@
     ],
 
     "towns" : [
-        {
+        { 
             "id" : 1,
-            "department_id" : 1,
+            "department_id" : 1, 
             "name" : "Guatemala"
         },
         {
@@ -175,6 +175,52 @@
             "id" : 17,
             "department_id" : 1,
             "name" : "San Miguel Petapa"
+        },
+        {
+            "id" : 18,
+            "department_id" : 2,
+            "name" : "Guastatoya"
+        },
+        {
+            "id" : 19,
+            "department_id" : 2,
+            "name" : "El Jícaro"
+        },
+        {
+            "id" : 20,
+            "department_id" : 2,
+            "name" : "Morazán"
+        },
+        {
+            "id" : 21,
+            "department_id" : 2,
+            "name" : "San Agustín Acasaguastlán"
+        },
+        {
+            "id" : 22,
+            "department_id" : 2,
+            "name" : "San Antonio La Paz"
+        },
+        {
+            "id" : 23,
+            "department_id" : 2,
+            "name" : "San Cristóbal Acasaguastlán"
+        },
+        {
+            "id" : 24,
+            "department_id" : 2,
+            "name" : "Sanarate"
+        },
+        {
+            "id" : 25,
+            "department_id" : 2,
+            "name" : "Sansare"
+        },
+        {
+            "id" : 26,
+            "department_id" : 3,
+            "name" : "San Miguel Petapa"
         }
+        
     ]
 }
