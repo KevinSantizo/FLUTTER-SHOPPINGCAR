@@ -1,31 +1,53 @@
 
+class Localization {
+  final List <Departments> departments;
+  final List <Towns> towns;
 
-import 'package:flutter/material.dart';
+  Localization({this.departments, this.towns});
 
-class Department{
+  factory Localization.fromJson(Map<String, dynamic> json){
+    return Localization(
+      towns: parseTowns(json),
+      departments: parseDepartments(json),
+    );
+  }
 
-  int idDepartment;
-  String nameDepartment;
+  static List<Towns> parseTowns(townsJson){
+    var tList = townsJson['towns'] as List;
+    List<Towns> townsList = tList.map((data) => Towns.fromJson(data)).toList();
+    return townsList;
+  }
 
-  Department({
-    @required this.idDepartment,
-    @required this.nameDepartment
-  });
+  static List<Departments> parseDepartments(departmentsJson){
+    var dList = departmentsJson['departments'] as List;
+    List<Departments> departmentsList = dList.map((data) => Departments.fromJson(data)).toList();
+    return departmentsList;
+  }
+}
+
+
+
+class Towns {
+  final int id;
+  final String name;
+
+  Towns({this.id, this.name});
+
+  factory Towns.fromJson(Map<String, dynamic> parsedJson){
+    return Towns(id: parsedJson['id'], name: parsedJson['name']);
+  }
 
 }
 
-class Town{
+class Departments {
+  final int id;
+  final String name;
+  final int stateId;
 
-  int idTown;
-  String nameTown;
+  Departments({this.id, this.name, this.stateId});
 
-  Town({
-    @required this.idTown,
-    @required this.nameTown
-  });
+  factory Departments.fromJson(Map<String, dynamic> parsedJson) {
+    return Departments(id: parsedJson['id'], name: parsedJson['name'],  stateId: parsedJson['state_id']);
+  }
 
 }
-
-
-
-
