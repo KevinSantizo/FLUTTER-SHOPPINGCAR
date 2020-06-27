@@ -1,7 +1,9 @@
+import 'dart:convert';
+
 import 'package:car_shoping/src/models/address_model.dart';
 import 'package:car_shoping/src/theme/theme.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 
@@ -15,8 +17,6 @@ class Register extends StatefulWidget {
 
 class _RegisterState extends State<Register> {
 
-
-  final _databaseReference = Firestore.instance;
   bool obscureText = true; 
   String dropdownValue;
   String dropdownValue2;     
@@ -26,48 +26,34 @@ class _RegisterState extends State<Register> {
     });
   }
 
-  List<Department> _departmentList = [
+  List statesList = List();
+  List provincesList = List();
+  List tempList = List();
+  String _state;
+  String _province;
 
-    Department( idDepartment:  1,   nameDepartment:  'Guatemala'      ),
-    Department( idDepartment:  2,   nameDepartment:  'El Progreso'    ),
-    Department( idDepartment:  3,   nameDepartment:  'Sacatepequez'   ),
-    Department( idDepartment:  4,   nameDepartment:  'Chimaltenango'  ),
-    Department( idDepartment:  5,   nameDepartment:  'Escuintla'      ),
-    Department( idDepartment:  6,   nameDepartment:  'Santa Rosa'     ),
-    Department( idDepartment:  7,   nameDepartment:  'Sololá'         ),
-    Department( idDepartment:  8,   nameDepartment:  'Totonicapán'    ),
-    Department( idDepartment:  9,   nameDepartment:  'Quetzaltenango' ),
-    Department( idDepartment:  10,  nameDepartment:  'Suchitepequez'  ),
-    Department( idDepartment:  11,  nameDepartment:  'Retalhuleu'     ),
-    Department( idDepartment:  12,  nameDepartment:  'San Marcos'     ),
-    Department( idDepartment:  13,  nameDepartment:  'Huehuetenango'  ),
-    Department( idDepartment:  14,  nameDepartment:  'Quiché'         ),
-    Department( idDepartment:  15,  nameDepartment:  'Baja Verapaz'   ),
-    Department( idDepartment:  16,  nameDepartment:  'Alta Verapaz'   ),
-    Department( idDepartment:  17,  nameDepartment:  'Petén'          ),
-    Department( idDepartment:  18,  nameDepartment:  'Izabal'         ),
-    Department( idDepartment:  19,  nameDepartment:  'Zacapa'         ),
-    Department( idDepartment:  20,  nameDepartment:  'Chiquimula'     ),
-    Department( idDepartment:  21,  nameDepartment:  'Jalapa'         ),
-    Department( idDepartment:  22,  nameDepartment:  'Jutiapa'        ),
+  Future<String> loadStatesProvincesFromFile() async {
+    return await rootBundle.loadString('json/states.json');
+  }
 
-  ];
+  Future<String> _populateDropdown() async {
+    String getPlaces = await loadStatesProvincesFromFile();
+    final jsonResponse = json.decode(getPlaces);
 
-  List<Town> _townList = [
+    Localization places = new Localization.fromJson(jsonResponse);
 
-    Town( idTown: 1, nameTown: 'Mixco'                  ),
-    Town( idTown: 1, nameTown: 'Villa Nueva'            ),
-    Town( idTown: 1, nameTown: 'Santa Catarina Pinula'  ),
-    Town( idTown: 1, nameTown: 'San José Pinula'        ),
-    Town( idTown: 1, nameTown: 'Villa Canales'          ),
-    Town( idTown: 1, nameTown: 'Fraijanes'              ),
+    setState(() {
+      statesList = places.states;
+      provincesList = places.provinces;
+    });
+  }
 
-    Town( idTown: 2, nameTown: 'Guastatoya'             ),
-    Town( idTown: 2, nameTown: 'Barberena'              ),
-    Town( idTown: 2, nameTown: 'San Marcos'             ),
+  @override
+  void initState() {
+    super.initState();
+    this._populateDropdown();
+  }
 
-
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -105,8 +91,7 @@ class _RegisterState extends State<Register> {
                 SizedBox(height: 30.0,),
                 _department(),
                 SizedBox(height: 30.0,),
-                _municipality(),
-                SizedBox(height: 30.0,),
+                // _municipality(),
                 _emailForm(),
                 SizedBox(height: 30.0,),
                 _phoneForm(),
@@ -137,59 +122,49 @@ class _RegisterState extends State<Register> {
   
   Widget _department(){
     return Container(
-      child: StreamBuilder<QuerySnapshot>(
-        stream: _databaseReference.collection('department').snapshots(),
-        builder: (context,  AsyncSnapshot<QuerySnapshot>snapshot) {
-          if (snapshot.hasData) {
-            return DropdownButtonFormField<String>(
-              hint: Text('Departamento', textScaleFactor: 1.0),
-              value: dropdownValue,
-              icon: Icon(Feather.chevron_down),
-              iconSize: 24,
-              elevation: 16,
-              style: TextStyle(color: Colors.grey, fontSize: 16.0),
-              onChanged: (String newValue) {
-                setState(() {
-                  dropdownValue = newValue;
-                  print(dropdownValue);
-                });
-              },
-              items: snapshot.data.documents.map<DropdownMenuItem<String>>((value) {
-                return DropdownMenuItem<String>(
-                  value: value['name_department'],
-                  child: Text(value['name_department']),
-                ); 
-              }).toList(),
-            );     
-          } else {
-            return Center(child: CircularProgressIndicator());
-          }
-        }
-      ),
-    );
-  }
-
-  Widget _municipality(){
-    return Container(
-      child: DropdownButtonFormField<String>(
-        hint: Text('Municipio', textScaleFactor: 1.0,),
-        value: dropdownValue2,
-        icon: Icon(Feather.chevron_down),
-        iconSize: 24,
-        elevation: 16,
-        style: TextStyle(color: Colors.grey, fontSize: 16.0),
-        onChanged: (String newValue) {
-          setState(() {
-            dropdownValue2 = newValue;
-            print(dropdownValue2);
-          });
-        },
-        items: _townList.map<DropdownMenuItem<String>>((value) {
-          return DropdownMenuItem<String>(
-            value:  value.nameTown,
-            child: Text(value.nameTown),
-          ); 
-        }).toList(),
+      child: Column(
+        children: <Widget>[
+          new DropdownButton(
+            isExpanded: true,
+            icon: const Icon(Feather.chevron_down),
+            items: statesList.map((item) {
+              return new DropdownMenuItem(
+                child: new Text(item.name),
+                value: item.id.toString(),
+              );
+            }).toList(),
+            onChanged: (newVal) {
+              setState(() {
+                _province = null;
+                _state = newVal;
+                tempList = provincesList
+                    .where((x) =>
+                        x.stateId.toString() == (_state.toString()))
+                    .toList();
+              });
+            },        
+            value: _state,
+            hint: Text('Departamento'),
+          ),
+          SizedBox(height: 30.0,),
+          new DropdownButton(
+            isExpanded: true,
+            icon: const Icon(Feather.chevron_down),
+            items: tempList.map((item) {
+              return new DropdownMenuItem(
+                child: new Text(item.name),
+                value: item.id.toString(),
+              );
+            }).toList(),
+            onChanged: (newVal) {
+              setState(() {
+                _province = newVal;
+              });
+            },
+            value: _province,
+            hint: Text('Municipio'),
+          ),
+        ],
       ),
     );
   }

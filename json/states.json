@@ -1,5 +1,5 @@
 {
-    "departments": [
+    "states": [
         {
             "id"    : 1,
             "name"  : "Guatemala"
@@ -90,1705 +90,1706 @@
         }
     ],
 
-    "towns" : [
+    "provinces" : 
+    [
         { 
             "id" : 1,
-            "department_id" : 1, 
+            "state_id" : 1, 
             "name" : "Guatemala"
         },
         {
             "id" : 2,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Santa Catarina Pinula"
         },
         {
             "id" : 3,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San José Pinula"
         },
         {
             "id" : 4,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San José del Golfo"
         },
         {
             "id" : 5,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Palencia"
         },
         {
             "id" : 6,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Chinautla"
         },
         {
             "id" : 7,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San Pedro Ayampuc"
         },
         {
             "id" : 8,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Mixco"
         },
         {
             "id" : 9,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San Pedro Sacatepéquez"
         },
         {
             "id" : 10,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San Juan Sacatepéquez"
         },
         {
             "id" : 11,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San Raymundo"
         },
         {
             "id" : 12,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Chuarrancho"
         },
         {
             "id" : 13,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Fraijanes"
         },
         {
             "id" : 14,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Amatitlán"
         },
         {
             "id" : 15,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Villa Nueva"
         },
         {
             "id" : 16,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "Villa Canales"
         },
         {
             "id" : 17,
-            "department_id" : 1,
+            "state_id" : 1,
             "name" : "San Miguel Petapa"
         },
         {
             "id" : 18,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "Guastatoya"
         },
         {
             "id" : 19,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "El Jícaro"
         },
         {
             "id" : 20,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "Morazán"
         },
         {
             "id" : 21,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "San Agustín Acasaguastlán"
         },
         {
             "id" : 22,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "San Antonio La Paz"
         },
         {
             "id" : 23,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "San Cristóbal Acasaguastlán"
         },
         {
             "id" : 24,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "Sanarate"
         },
         {
             "id" : 25,
-            "department_id" : 2,
+            "state_id" : 2,
             "name" : "Sansare"
         },
         {
             "id" : 26,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Alotenango"
         }, 
         {
             "id" : 27,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Ciudad Vieja"
         }, 
         {
             "id" : 28,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Jocotenango"
         }, 
         {
             "id" : 29,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Antigua Guatemala"
         }, 
         {
             "id" : 30,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Magdalena Milpas Altas"
         }, 
         {
             "id" : 31,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Pastores"
         }, 
         {
             "id" : 32,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "San Antonio Aguas Calientes"
         }, 
         {
             "id" : 33,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "San Bartolomé Milpas Altas"
         }, 
         {
             "id" : 34,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "San Lucas Sacatepéquez"
         }, 
         {
             "id" : 35,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "San Miguel Dueñas"
         }, 
         {
             "id" : 36,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Santa Catarina Barahona"
         }, 
         {
             "id" : 37,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Santa Lucía Milpas Altas"
         }, 
         {
             "id" : 38,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Santa María de Jesús"
         }, 
         {
             "id" : 39,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Santiago Sacatepéquez"
         }, 
         {
             "id" : 40,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Santo Domingo Xenacoj"
         }, 
         {
             "id" : 41,
-            "department_id" : 3,
+            "state_id" : 3,
             "name" : "Sumpango"
         },
         {
             "id" : 42,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Chimaltenango"
         },
         {
             "id" : 43,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "San José Poaquíl"
         },
         {
             "id" : 44,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "San Martín Jilotepeque"
         },
         {
             "id" : 45,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "San Juan Comalapa"
         },
         {
             "id" : 46,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Santa Apolonia"
         },
         {
             "id" : 47,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Tecpán (Guatemala)"
         },
         {
             "id" : 48,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Patzún"
         },
         {
             "id" : 49,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Pochuta"
         },
         {
             "id" : 50,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Patzicía"
         },
         {
             "id" : 51,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Santa Cruz Balanyá"
         },
         {
             "id" : 52,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Acatenango"
         },
         {
             "id" : 53,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "San Pedro Yepocapa"
         },
         {
             "id" : 54,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "San Andrés Itzapa"
         },
         {
             "id" : 55,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Parramos"
         },
         {
             "id" : 56,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "Zaragoza"
         },
         {
             "id" : 57,
-            "department_id" : 4,
+            "state_id" : 4,
             "name" : "El Tejar"
         },
         {
             "id" : 58,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Escuintla"
         },
         {
             "id" : 59,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Guanagazapa"
         },
         {
             "id" : 60,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Iztapa"
         },
         {
             "id" : 61,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "La Democracia"
         },
         {
             "id" : 62,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "La Gomera"
         },
         {
             "id" : 63,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Masagua"
         },
         {
             "id" : 64,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Nueva Concepción"
         },
         {
             "id" : 65,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Palín"
         },
         {
             "id" : 66,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "San José"
         },
         {
             "id" : 67,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "San Vicente Pacaya"
         },
         {
             "id" : 68,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Santa Lucía Cotzumalguapa"
         },
         {
             "id" : 69,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Sipacate"
         },
         {
             "id" : 70,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Siquinalá"
         },
         {
             "id" : 71,
-            "department_id" : 5,
+            "state_id" : 5,
             "name" : "Tiquisate"
         },
         {
             "id" : 72,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Cuilapa"
         },
         {
             "id" : 73,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Barberena"
         },
         {
             "id" : 74,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Casillas"
         },
         {
             "id" : 75,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Chiquimulilla"
         },
         {
             "id" : 76,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Guazacapán"
         },
         {
             "id" : 77,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Nueva Santa Rosa"
         },
         {
             "id" : 78,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Oratorio"
         },
         {
             "id" : 79,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Pueblo Nuevo Viñas"
         },
         {
             "id" : 80,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "San Juan Tecuaco"
         },
         {
             "id" : 81,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "San Rafael Las Flores"
         },
         {
             "id" : 82,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Santa Cruz Naranjo"
         },
         {
             "id" : 83,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Santa María Ixhuatán"
         },
         {
             "id" : 84,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Santa Rosa de Lima"
         },
         {
             "id" : 85,
-            "department_id" : 6,
+            "state_id" : 6,
             "name" : "Taxisco"
         },
         {
             "id" : 86,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Sololá"
         },
         {
             "id" : 87,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Concepción"
         },
         {
             "id" : 88,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Nahualá"
         },
         {
             "id" : 89,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Panajachel"
         },
         {
             "id" : 90,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Andrés Semetabaj"
         },
         {
             "id" : 91,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Antonio Palopó"
         },
         {
             "id" : 92,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San José Chacayá"
         },
         {
             "id" : 93,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Juan La Laguna"
         },
         {
             "id" : 94,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Lucas Tolimán"
         },
         {
             "id" : 95,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Marcos La Laguna"
         },
         {
             "id" : 96,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Pablo La Laguna"
         },
         {
             "id" : 97,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "San Pedro La Laguna"
         },
         {
             "id" : 98,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santa Catarina Ixtahuacán"
         },
         {
             "id" : 99,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santa Catarina Palopó"
         },
         {
             "id" : 100,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santa Clara La Laguna"
         },
         {
             "id" : 101,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santa Cruz La Laguna"
         },
         {
             "id" : 102,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santa Lucía Utatlán"
         },
         {
             "id" : 103,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santa María Visitación"
         },
         {
             "id" : 104,
-            "department_id" : 7,
+            "state_id" : 7,
             "name" : "Santiago Atitlán"
         },
         {
             "id" : 105,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "Totonicapán"
         },
         {
             "id" : 106,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "San Cristóbal Totonicapán"
         },
         {
             "id" : 107,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "San Francisco El Alto"
         },
         {
             "id" : 108,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "San Andrés Xecul"
         },
         {
             "id" : 109,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "Momostenango"
         },
         {
             "id" : 110,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "Santa María Chiquimula"
         },
         {
             "id" : 111,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "Santa Lucía La Reforma"
         },
         {
             "id" : 112,
-            "department_id" : 8,
+            "state_id" : 8,
             "name" : "San Bartolo"
         },
         {
             "id" : 113,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Quetzaltenango"
         },
         {
             "id" : 114,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Almolonga"
         },
         {
             "id" : 115,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Cabricán"
         },
         {
             "id" : 116,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Cajolá"
         },
         {
             "id" : 117,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Cantel"
         },
         {
             "id" : 118,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Coatepeque"
         },
         {
             "id" : 119,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Colomba Costa Cuca"
         },
         {
             "id" : 120,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Concepción Chiquirichapa"
         },
         {
             "id" : 121,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "El Palmar"
         },
         {
             "id" : 122,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Flores Costa Cuca"
         },
         {
             "id" : 123,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Génova"
         },
         {
             "id" : 124,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Huitán"
         },
         {
             "id" : 125,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "La Esperanza"
         },
         {
             "id" : 126,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Olintepeque"
         },
         {
             "id" : 127,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Palestina de los Altos"
         },
         {
             "id" : 128,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Salcajá"
         },
         {
             "id" : 129,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "San Carlos Sija"
         },
         {
             "id" : 130,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "San Francisco La Unión"
         },
         {
             "id" : 131,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "San Juan Ostuncalco"
         },
         {
             "id" : 132,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "San Martín Sacatepequez"
         },
         {
             "id" : 133,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "San Mateo"
         },
         {
             "id" : 134,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "San Miguel Sigüilá"
         },
         {
             "id" : 135,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Sibilia"
         },
         {
             "id" : 136,
-            "department_id" : 9,
+            "state_id" : 9,
             "name" : "Zunil"
         },
         {
             "id" : 137,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Mazatenango"
         },
         {
             "id" : 138,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Chicacao"
         },
         {
             "id" : 139,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Cuyotenango"
         },
         {
             "id" : 140,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Patulul"
         },
         {
             "id" : 141,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Pueblo Nuevo"
         },
         {
             "id" : 142,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Río Bravo"
         },
         {
             "id" : 143,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Samayac"
         },
         {
             "id" : 144,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Antonio Suchitepéquez"
         },
         {
             "id" : 145,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Bernardino"
         },
         {
             "id" : 146,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Francisco Zapotitlán"
         },
         {
             "id" : 147,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Gabriel"
         },
         {
             "id" : 148,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San José El Ídolo"
         },
         {
             "id" : 149,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San José La Máquina"
         },
         {
             "id" : 150,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Juan Bautista"
         },
         {
             "id" : 151,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Lorenzo"
         },
         {
             "id" : 152,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Miguel Panán"
         },
         {
             "id" : 153,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "San Pablo Jocopilas"
         },
         {
             "id" : 154,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Santa Bárbara"
         },
         {
             "id" : 155,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Santo Domingo Suchitepéquez"
         },
         {
             "id" : 156,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Santo Tomás La Unión"
         },
         {
             "id" : 157,
-            "department_id" : 10,
+            "state_id" : 10,
             "name" : "Zunilito"
         },
         {
             "id" : 158,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "Retalhuleu"
         },
         {
             "id" : 159,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "Champerico"
         },
         {
             "id" : 160,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "El Asintal"
         },
         {
             "id" : 161,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "Nuevo San Carlos"
         },
         {
             "id" : 162,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "San Andrés Villa Seca"
         },
         {
             "id" : 163,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "San Felipe"
         },
         {
             "id" : 164,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "San Martín Zapotitlán"
         },
         {
             "id" : 165,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "San Sebastián"
         },
         {
             "id" : 166,
-            "department_id" : 11,
+            "state_id" : 11,
             "name" : "Santa Cruz Muluá"
         },
         {
             "id" : 167,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Marcos"
         },
         {
             "id" : 168,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Ayutla"
         },
         {
             "id" : 169,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Catarina"
         },
         {
             "id" : 170,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Comitancillo"
         },
         {
             "id" : 171,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Concepción Tutuapa"
         },
         {
             "id" : 172,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "El Quetzal"
         },
         {
             "id" : 173,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "El Tumbador"
         },
         {
             "id" : 174,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Esquipulas Palo Gordo"
         },
         {
             "id" : 175,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Ixchiguán"
         },
         {
             "id" : 176,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "La Blanca"
         },
         {
             "id" : 177,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "La Reforma"
         },
         {
             "id" : 178,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Malacatán"
         },
         {
             "id" : 179,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Nuevo Progreso"
         },
         {
             "id" : 180,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Ocós"
         },
         {
             "id" : 181,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Pajapita"
         },
         {
             "id" : 182,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Río Blanco"
         },
         {
             "id" : 183,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Antonio Sacatepéquez"
         },
         {
             "id" : 184,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Cristóbal Cucho"
         },
         {
             "id" : 185,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San José El Rodeo"
         },
         {
             "id" : 186,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San José Ojetenam"
         },
         {
             "id" : 187,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Lorenzo"
         },
         {
             "id" : 188,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Miguel Ixtahuacán"
         },
         {
             "id" : 189,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Pablo"
         },
         {
             "id" : 190,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Pedro Sacatepéquez"
         },
         {
             "id" : 191,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "San Rafael Pie de la Cuesta"
         },
         {
             "id" : 192,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Sibinal"
         },
         {
             "id" : 193,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Sipacapa"
         },
         {
             "id" : 194,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Tacaná"
         },
         {
             "id" : 195,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Tajumulco"
         },
         {
             "id" : 196,
-            "department_id" : 12,
+            "state_id" : 12,
             "name" : "Tejutla"
         },
         {
             "id" : 197,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Huehuetenango"
         },
         {
             "id" : 198,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Aguacatán"
         },
         {
             "id" : 199,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Chiantla"
         },
         {
             "id" : 200,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Colotenango"
         },
         {
             "id" : 201,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Concepción Huista"
         },
         {
             "id" : 202,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Cuilco"
         },
         {
             "id" : 203,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Jacaltenango"
         },
         {
             "id" : 204,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "La Libertad"
         },
         {
             "id" : 205,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "La Democracia"
         },
         {
             "id" : 206,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Malacatancito"
         },
         {
             "id" : 207,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Nentón"
         },
         {
             "id" : 208,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Petatán"
         },
         {
             "id" : 209,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Antonio Huista"
         },
         {
             "id" : 210,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Gaspar Ixchil"
         },
         {
             "id" : 211,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Ildefonso Ixtahuacán"
         },
         {
             "id" : 212,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Juan Atitán"
         },
         {
             "id" : 213,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Juan Ixcoy"
         },
         {
             "id" : 214,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Mateo Ixtatán"
         },
         {
             "id" : 215,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Miguel Acatán"
         },
         {
             "id" : 216,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Pedro Nécta"
         },
         {
             "id" : 217,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Pedro Soloma"
         },
         {
             "id" : 218,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Rafael La Independencia"
         },
         {
             "id" : 219,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Rafael Pétzal"
         },
         {
             "id" : 220,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Sebastián Coatán"
         },
         {
             "id" : 221,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "San Sebastián Huehuetenango"
         },
         {
             "id" : 222,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Santa Ana Huista"
         },
         {
             "id" : 223,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Santa Bárbara"
         },
         {
             "id" : 224,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Santa Cruz Barillas"
         },
         {
             "id" : 225,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Santa Eulalia"
         },
         {
             "id" : 226,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Santiago Chimaltenango"
         },
         {
             "id" : 227,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Tectitán"
         },
         {
             "id" : 228,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Todos Santos Cuchumatán"
         },
         {
             "id" : 229,
-            "department_id" : 13,
+            "state_id" : 13,
             "name" : "Unión Cantinil"
         },
         {
             "id" : 230,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Santa Cruz del Quiché"
         },
         {
             "id" : 231,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Canillá"
         },
         {
             "id" : 232,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Chajul"
         },
         {
             "id" : 233,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Chicamán"
         },
         {
             "id" : 234,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Chiché"
         },
         {
             "id" : 235,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Chichicastenango"
         },
         {
             "id" : 236,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Chinique"
         },
         {
             "id" : 237,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Cunén"
         },
         {
             "id" : 238,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Ixcán"
         },
         {
             "id" : 239,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Joyabaj"
         },
         {
             "id" : 240,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Pachalum"
         },
         {
             "id" : 241,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Patzité"
         },
         {
             "id" : 242,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Sacapulas"
         },
         {
             "id" : 243,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "San Andrés Sajcabajá"
         },
         {
             "id" : 244,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "San Antonio Ilotenango"
         },
         {
             "id" : 245,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "San Bartolomé Jocotenango"
         },
         {
             "id" : 246,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "San Juan Cotzal"
         },
         {
             "id" : 247,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "San Pedro Jocopilas"
         },
         {
             "id" : 248,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Santa María Nebaj"
         },
         {
             "id" : 249,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Uspantán"
         },
         {
             "id" : 250,
-            "department_id" : 14,
+            "state_id" : 14,
             "name" : "Zacualpa"
         },
         {
             "id" : 251,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "Salamá"
         },
         {
             "id" : 252,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "San Miguel Chicaj"
         },
         {
             "id" : 253,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "Rabinal"
         },
         {
             "id" : 254,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "Cubulco"
         },
         {
             "id" : 255,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "Granados"
         },
         {
             "id" : 256,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "Santa Cruz el Chol"
         },
         {
             "id" : 257,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "San Jerónimo"
         },
         {
             "id" : 258,
-            "department_id" : 15,
+            "state_id" : 15,
             "name" : "Purulhá"
         },
         {
             "id" : 259,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Cobán"
         },
         {
             "id" : 260,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Chahal"
         },
         {
             "id" : 261,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Chisec"
         },
         {
             "id" : 262,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Fray Bartolomé de las Casas"
         },
         {
             "id" : 263,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Lanquín"
         },
         {
             "id" : 264,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Panzós"
         },
         {
             "id" : 265,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Raxruhá"
         },
         {
             "id" : 266,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "San Cristóbal Verapaz"
         },
         {
             "id" : 267,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "San Juan Chamelco"
         },
         {
             "id" : 268,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "San Miguel Tucurú"
         },
         {
             "id" : 269,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "San Pedro Carchá"
         },
         {
             "id" : 270,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Santa Catalina La Tinta"
         },
         {
             "id" : 271,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Santa Cruz Verapaz"
         },
         {
             "id" : 272,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Santa María Cahabón"
         },
         {
             "id" : 273,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Senahú"
         },
         {
             "id" : 274,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Tactíc"
         },
         {
             "id" : 275,
-            "department_id" : 16,
+            "state_id" : 16,
             "name" : "Tamahú"
         },
         {
             "id" : 276,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Flores"
         },
         {
             "id" : 277,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Dolores"
         },
         {
             "id" : 278,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "El Chal"
         },
         {
             "id" : 279,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "La Libertad"
         },
         {
             "id" : 280,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Las Cruces"
         },
         {
             "id" : 281,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Melchor de Mencos"
         },
         {
             "id" : 282,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Poptún"
         },
         {
             "id" : 283,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "San Andrés"
         },
         {
             "id" : 284,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "San Benito"
         },
         {
             "id" : 285,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "San Francisco"
         },
         {
             "id" : 286,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "San José"
         },
         {
             "id" : 287,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "San Luis"
         },
         {
             "id" : 288,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Santa Ana"
         },
         {
             "id" : 289,
-            "department_id" : 17,
+            "state_id" : 17,
             "name" : "Sayaxché"
         },
         {
             "id" : 290,
-            "department_id" : 18,
+            "state_id" : 18,
             "name" : "Puerto Barrios"
         },
         {
             "id" : 291,
-            "department_id" : 18,
+            "state_id" : 18,
             "name" : "El Estor"
         },
         {
             "id" : 292,
-            "department_id" : 18,
+            "state_id" : 18,
             "name" : "Livingston"
         },
         {
             "id" : 293,
-            "department_id" : 18,
+            "state_id" : 18,
             "name" : "Los Amates"
         },
         {
             "id" : 294,
-            "department_id" : 18,
+            "state_id" : 18,
             "name" : "Morales"
         },
         {
             "id" : 295,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Zacapa"
         },
         {
             "id" : 296,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Cabañas"
         },
         {
             "id" : 297,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Estanzuela"
         },
         {
             "id" : 298,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Gualán"
         },
         {
             "id" : 299,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Huité"
         },
         {
             "id" : 300,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "La Unión"
         },
         {
             "id" : 301,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Río Hondo"
         },
         {
             "id" : 302,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "San Diego"
         },
         {
             "id" : 303,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "San Jorge"
         },
         {
             "id" : 304,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Teculután"
         },
         {
             "id" : 305,
-            "department_id" : 19,
+            "state_id" : 19,
             "name" : "Usumatlán"
         },
         {
             "id" : 306,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Chiquimula"
         },
         {
             "id" : 307,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Camotán"
         },
         {
             "id" : 308,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Concepción Las Minas"
         },
         {
             "id" : 309,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Esquipulas"
         },
         {
             "id" : 310,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Ipala"
         },
         {
             "id" : 311,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Jocotán"
         },
         {
             "id" : 312,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Olopa"
         },
         {
             "id" : 313,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "Quezaltepeque"
         },
         {
             "id" : 314,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "San Jacinto"
         },
         {
             "id" : 315,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "San José La Arada"
         },
         {
             "id" : 316,
-            "department_id" : 20,
+            "state_id" : 20,
             "name" : "San Juan Ermita"
         },
         {
             "id" : 317,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "Jalapa"
         },
         {
             "id" : 318,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "Mataquescuintla"
         },
         {
             "id" : 319,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "Monjas"
         },
         {
             "id" : 320,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "San Carlos Alzatate"
         },
         {
             "id" : 321,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "San Luis Jilotepeque"
         },
         {
             "id" : 322,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "San Manuel Chaparrón"
         },
         {
             "id" : 323,
-            "department_id" : 21,
+            "state_id" : 21,
             "name" : "San Pedro Pinula"
         },
         {
             "id" : 324,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Jutiapa"
         },
         {
             "id" : 325,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Agua Blanca"
         },
         {
             "id" : 326,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Asunción Mita"
         },
         {
             "id" : 327,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Atescatempa"
         },
         {
             "id" : 328,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Comapa"
         },
         {
             "id" : 329,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Conguaco"
         },
         {
             "id" : 330,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "El Adelanto"
         },
         {
             "id" : 331,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "El Progreso"
         },
         {
             "id" : 332,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Jalpatagua"
         },
         {
             "id" : 333,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Jerez"
         },
         {
             "id" : 334,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Moyuta"
         },
         {
             "id" : 335,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Pasaco"
         },
         {
             "id" : 336,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Quesada"
         },
         {
             "id" : 337,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "San José Acatempa"
         },
         {
             "id" : 338,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Santa Catarina Mita"
         },
         {
             "id" : 339,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Yupiltepeque"
         },
         {
             "id" : 340,
-            "department_id" : 22,
+            "state_id" : 22,
             "name" : "Zapotitlán"
         }
     ]

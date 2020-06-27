@@ -1,53 +1,57 @@
 
 class Localization {
-  final List <Departments> departments;
-  final List <Towns> towns;
+  final List <Provinces> provinces;
+  final List <States> states;
 
-  Localization({this.departments, this.towns});
+  Localization({this.provinces, this.states});
 
-  factory Localization.fromJson(Map<String, dynamic> json){
+  factory Localization.fromJson(Map<String, dynamic> json) {
     return Localization(
-      towns: parseTowns(json),
-      departments: parseDepartments(json),
+ 
+       
+      states: parseStates(json),
+      provinces: parseProvinces(json),
+      
     );
   }
 
-  static List<Towns> parseTowns(townsJson){
-    var tList = townsJson['towns'] as List;
-    List<Towns> townsList = tList.map((data) => Towns.fromJson(data)).toList();
-    return townsList;
+  
+  static List<States> parseStates(statesJson) {
+    var slist = statesJson['states'] as List;
+    List<States> statesList =
+       slist.map((data) => States.fromJson(data)).toList();
+    return statesList;
   }
 
-  static List<Departments> parseDepartments(departmentsJson){
-    var dList = departmentsJson['departments'] as List;
-    List<Departments> departmentsList = dList.map((data) => Departments.fromJson(data)).toList();
-    return departmentsList;
+  static List<Provinces> parseProvinces(provincesJson) {
+    var plist = provincesJson['provinces'] as List;
+    List<Provinces> provincesList =
+        plist.map((data) => Provinces.fromJson(data)).toList();
+    return provincesList;
   }
 }
 
-
-
-class Towns {
+class States {
   final int id;
   final String name;
 
-  Towns({this.id, this.name});
+  States({this.id, this.name});
 
-  factory Towns.fromJson(Map<String, dynamic> parsedJson){
-    return Towns(id: parsedJson['id'], name: parsedJson['name']);
+  factory States.fromJson(Map<String, dynamic> parsedJson){
+    return States(id: parsedJson['id'], name: parsedJson['name']);
   }
 
 }
 
-class Departments {
+class Provinces {
   final int id;
   final String name;
   final int stateId;
 
-  Departments({this.id, this.name, this.stateId});
+  Provinces({this.id, this.name, this.stateId});
 
-  factory Departments.fromJson(Map<String, dynamic> parsedJson) {
-    return Departments(id: parsedJson['id'], name: parsedJson['name'],  stateId: parsedJson['state_id']);
+  factory Provinces.fromJson(Map<String, dynamic> parsedJson) {
+    return Provinces(id: parsedJson['id'], name: parsedJson['name'],  stateId: parsedJson['state_id']);
   }
 
 }
