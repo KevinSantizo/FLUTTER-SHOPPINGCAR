@@ -5,23 +5,18 @@ import 'package:car_shoping/src/pages/search.dart';
 import 'package:car_shoping/src/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class BottomNavigationBarComponent extends StatefulWidget {
   @override
-  _BottomNavigationBarComponentState createState() => _BottomNavigationBarComponentState();
+  _BottomNavigationBarComponentState createState() =>
+      _BottomNavigationBarComponentState();
 }
 
-class _BottomNavigationBarComponentState extends State<BottomNavigationBarComponent> {
-
+class _BottomNavigationBarComponentState
+    extends State<BottomNavigationBarComponent> {
   int _currentIndex = 0;
 
-  final List<Widget> pages = [
-    HomePage(),
-    Farm(),
-    Search(),
-    Profile()
-  ]; 
+  final List<Widget> pages = [HomePage(), Farm(), Search(), Profile()];
 
   @override
   Widget build(BuildContext context) {
@@ -42,21 +37,13 @@ class _BottomNavigationBarComponentState extends State<BottomNavigationBarCompon
         },
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Feather.home),
-            title: Text('Inicio')
-          ),
+              icon: Icon(Feather.home), title: Text('Inicio')),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesome.flag_checkered),
-            title: Text('Predios')
-          ),
+              icon: Icon(FontAwesome.flag_checkered), title: Text('Predios')),
           BottomNavigationBarItem(
-            icon: Icon(Feather.search),
-            title: Text('Buscar')
-          ),
+              icon: Icon(Feather.search), title: Text('Buscar')),
           BottomNavigationBarItem(
-            icon: Icon(Feather.user),
-            title: Text('Perfil')
-          ),
+              icon: Icon(Feather.user), title: Text('Perfil')),
         ],
       ),
     );
