@@ -24,7 +24,7 @@ class _BottomNavigationBarComponentState
       body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color(0XFF353535),
-        iconSize: 30.0,
+        iconSize: 25.0,
         type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.grey,
         selectedItemColor: myTheme.accentColor,
